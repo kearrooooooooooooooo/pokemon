@@ -8,26 +8,11 @@
 	<script src = "pokemon_game.js"></script>
 	<title>Pokemon Battle</title>
 </head>
-
 <div class = "game screen">
 	<div class = "enemy">
-		<div class = "stats">
-			<div class = "top">
-				<div class = "pokeballs">
-					<div class = "pokeball"></div>
-					<div class = "pokeball"></div>
-					<div class = "pokeball"></div>
-					<div class = "pokeball"></div>
-					<div class = "pokeball"></div>
-				</div>
-					<div id = "their_HP" class = "hp">100</div>
-				</div>
-				<span class = "name"> Pikachu </span> <!--idk what pokemon to use lol-->
-				<span class = "level"> 25 </span>
-			</div>
-			<img class = "pokemon" src = "https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif" alt = "Pikachu sprite" />
-		</div>
-		<div class = "player">
+<body>
+	<div class = "game screen">
+		<div class = "enemy">
 			<div class = "stats">
 				<div class = "top">
 					<div class = "pokeballs">
@@ -37,26 +22,45 @@
 						<div class = "pokeball"></div>
 						<div class = "pokeball"></div>
 					</div>
-						<div id = "my_HP" class = "hp">100</div>
+						<div id = "their_HP" class = "hp">100</div>
 					</div>
-					<span class = "name"> Prinplup </span>
+					<span class = "name"> Pikachu </span> <!--idk what pokemon to use lol-->
 					<span class = "level"> 25 </span>
 				</div>
-				<img class = "pokemon" src = "https://img.pokemondb.net/sprites/black-white/anim/back-normal/prinplup.gif" />
+				<img class = "pokemon" src = "https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif" alt = "Pikachu sprite" />
 			</div>
-		</div>
-		<div class = "box">
-			<div id = "message" class = "message"> 
-				<p>What should PRINPLUP do?</p>
+			<div class = "player">
+				<div class = "stats">
+					<div class = "top">
+						<div class = "pokeballs">
+							<div class = "pokeball"></div>
+							<div class = "pokeball"></div>
+							<div class = "pokeball"></div>
+							<div class = "pokeball"></div>
+							<div class = "pokeball"></div>
+						</div>
+							<div id = "my_HP" class = "hp">100</div>
+						</div>
+						<span class = "name"> Prinplup </span>
+						<span class = "level"> 25 </span>
+					</div>
+					<img class = "pokemon" src = "https://img.pokemondb.net/sprites/black-white/anim/back-normal/prinplup.gif" />
+				</div>
 			</div>
-			<div class = "attacks">
-				<button onclick = "bubble_beam()">Bubble Beam</button>
-				<button onclick = "water_pulse()">Water Pulse</button>
-				<button onclick = "steel_claw()">Steel Claw</button>
-				<button onclick = "tackle()">Tackle</button>
+			<div class = "box">
+				<div id = "message" class = "message"> 
+					<p>What should PRINPLUP do?</p>
+				</div>
+				<div class = "attacks">
+					<button onclick = "bubble_beam()">Bubble Beam</button>
+					<button onclick = "water_pulse()">Water Pulse</button>
+					<button onclick = "steel_claw()">Steel Claw</button>
+					<button onclick = "tackle()">Tackle</button>
+				</div>
+				<div class = "continue">
+					<button onclick = "comp_pokemon()">Continue</button>
+				</div>
 			</div>
-			<div class = "continue">
-				<button onclick = "comp_pokemon()">Continue</button>
-			</div>
-		</div>
+	</body>
+	</html>
 <!--will add in attacks later-->
