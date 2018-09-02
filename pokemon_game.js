@@ -1,7 +1,7 @@
 var their_HP = 300;
 var my_HP = 300; 
 
-their_attacks = [thunderbolt, quickAttack, thunder, chargeBeam];
+//their_attacks = [thunderbolt, quickAttack, thunder, chargeBeam];
 
 var playerMove = 0; 
 
