@@ -63,7 +63,7 @@ body {
 	background-color: yellow;
 	border: 3px solid red;
 	border-radius: 0 0 8px 8px;
-	height: 120px;
+	height: 160px;
 	width: 784px;
 }
 
@@ -71,9 +71,10 @@ body {
 	position: relative;
 	font-size: 24px;
 	width: 50%;
+	top: -10%;
 }
 
-.box .continue {
+.box .continue{
 	position: absolute;
 	margin-top: 30px;
 	width: 25%;
@@ -95,4 +96,62 @@ body {
 
 .box .continue button:hover {
 	background-color: red;
+}
+
+.box .attacks{
+	position: relative;
+	float: right;
+	width: 50%;
+	height: 100%;
+}
+
+.box .attacks button{
+	position: relative;
+	background-color: blue;
+	float: right;
+	border: 3px solid black;
+	border-radius: 4px;
+	font-family: monospace;
+	font-size: 20px;
+	line-height: 14px;
+	margin: 4px;
+	padding: 16px;
+	width: calc(50% - 8px);
+	height: calc(50% - 8px);
+	top: -45%;
+	outline: none !important;
+}
+
+.box .attacks button:hover{
+	background-color: red;
+}
+
+.stats{
+	background-color: black;
+	border-radius: 8px;
+	color: white;
+	padding: 12px;
+}
+
+.stats .pokeballs{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.stats .pokeballs .pokeball{
+	position: relative;
+	float: left;
+	background-image: url('http://bit.ly/pokeballimg');
+	background-size: 100% 100%;
+	width: 25px;
+	height: 25px;
+}
+
+.stats .hp{
+	float: right;
+}
+
+.stats .name{
+	font-weight: bold;
 }
