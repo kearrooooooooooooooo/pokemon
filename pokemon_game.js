@@ -32,3 +32,36 @@ function ice_beam() {
 			playerMove = 1; 
 		}
 		}
+
+function thunderbolt(){
+	var miss = Math.floor((Math.random() * 10) + 1); // miss rate
+	if(miss == 1) {
+		document.getElementById("message").innerHTML = "PIKACHU's attack missed!";
+	}
+	else{
+		document.getElementById('message').innerHTML = "PIKACHU used thunderbolt"	
+		var crit = Math.floor((Math.random() * 10) + 1);
+		if(crit == 4){
+			for(var x = 0; x < 2; x++){
+				my_HP -= 30;
+			}
+		}
+		else{
+			my_HP -=30;
+		}
+		if(my_HP < 0){my_HP =0}
+			document.getElementById("my_HP").innerHTML = my_HP;
+		if(my_HP == 0){
+			document.getElementById("message").innerHTML = "MUDKIP fainted!"
+		}
+	}
+}
+
+/*function comp_pokemon(){
+	if(playerMove == 1 & their_HP != 0){
+		//var moves = Math.floor((Math.random() * 4) + 1); their math is wrong lul
+		thunderbolt();
+		playerMove = 0;
+	}
+}
+*/
