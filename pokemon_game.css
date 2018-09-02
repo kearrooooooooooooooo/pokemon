@@ -1,0 +1,98 @@
+body {
+	font-family: monospace;
+	font-size: 20px;
+}
+
+.game_screen{
+	position: relative;
+	background-image: url('http://bit.ly/pokemonbg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 480px;
+	width: 800px;
+}
+
+.enemy {
+	position: relative;
+	height: 300px;
+}
+
+.enemy .stats{
+	position: absolute;
+	top: 96px;
+	left: 40px;
+	width: 320px;
+}
+
+.enemy .pokemon{
+	position: absolute;
+	bottom: 0;
+	right: 140px;
+	width: 100px;
+}
+
+.player{
+	position: relative;
+	height: 192px;
+}
+
+.player .stats{
+	position: absolute;
+	top: 48px;
+	right: 40px;
+	width: 320px;
+}
+
+.player .pokemon{
+	position: absolute;
+	left: 100px;
+	bottom:10px;
+	width: 160px;
+}
+
+.stats .hp:before{
+	content: 'HP: '
+}
+
+.stats .level:before{
+	content: 'LVL '
+}
+
+.box{
+	padding: 8px;
+	background-color: yellow;
+	border: 3px solid red;
+	border-radius: 0 0 8px 8px;
+	height: 120px;
+	width: 784px;
+}
+
+.box .message{
+	position: relative;
+	font-size: 24px;
+	width: 50%;
+}
+
+.box .continue {
+	position: absolute;
+	margin-top: 30px;
+	width: 25%;
+	height: 100%;
+}
+
+.box .continue button {
+	position: relative;
+	background-color: blue;
+	border: 3px solid black;
+	border-radius: 4px;
+	font-family: monospace;
+	font-size: 15px;
+	line-height: 14px;
+	margin: 4px;
+	padding: 16px;
+	outline: none !important;
+}
+
+.box .continue button:hover {
+	background-color: red;
+}
