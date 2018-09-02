@@ -6,12 +6,12 @@ their_attacks = [thunderbolt, quickAttack, thunder, chargeBeam];
 playerMove = 0; 
 
 function ice_beam() {
-	if (playerMove == 0 & userHP != 0) {
+	if(playerMove == 0 && my_HP != 0) {
 		var miss = Math.floor((Math.random() * 10) + 1); // miss rate
-		if (miss == 1) {
+		if(miss == 1) {
 			document.getElementById("message").innerHTML = "MUDKIP's attack missed!";
 		}
-		else {
+		else{
 			document.getElementById("message").innerHTML = "MUDKIP used Ice Beam!"; // ice beam used
 			var crit = Math.floor((Math.random() * 10) + 1); // crit chance
 			if (crit == 4) {
@@ -19,12 +19,12 @@ function ice_beam() {
 					their_HP -= 30; 
 				}
 			}
-			else {
+			else{
 				their_HP -= 30; // no crit
 			}
-			if (their_HP < 0){their_HP = 0} // enemy faints
+			if(their_HP < 0){their_HP = 0} // enemy faints
 				document.getElementById("their_HP").innerHTML = their_HP; // updated HP
-			if (their_HP == 0) {
+			if(their_HP == 0) {
 				document.getElementById("message").innerHTML = "PIKACHU fainted!" // if enemy pokemon's HP is 0
 				}
 			}
