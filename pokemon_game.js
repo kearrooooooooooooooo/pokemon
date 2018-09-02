@@ -1,16 +1,12 @@
-var their_HP = 100;
-var my_HP = 100; 
+var their_HP = 300;
+var my_HP = 300; 
 
 //their_attacks = [thunderbolt, quickAttack, thunder, chargeBeam];
 
 var playerMove = 0; 
 
 function ice_beam() {
-<<<<<<< HEAD
-	if(playerMove == 0 && my_HP != 0) {
-=======
 	if (playerMove == 0 & my_HP != 0) {
->>>>>>> f4b43c2d1c75690607624b4d532bb51980ec355c
 		var miss = Math.floor((Math.random() * 10) + 1); // miss rate
 		if(miss == 1) {
 			document.getElementById("message").innerHTML = "MUDKIP's attack missed!";
