@@ -5,6 +5,11 @@ their_attacks = [thunderbolt, quickAttack, thunder, slam];
 
 var playerMove = 0; 
 
+function startGame() {
+	var bgm = new Audio("pokemon_game_bgm.mp3");
+	bgm.play();
+}
+
 function ice_beam() {
 	if (playerMove == 0 & my_HP != 0) {
 		var miss = Math.floor((Math.random() * 10) + 1); // miss rate
