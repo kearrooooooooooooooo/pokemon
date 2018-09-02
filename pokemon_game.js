@@ -1,9 +1,9 @@
 var their_HP = 100;
 var my_HP = 100; 
 
-their_attacks = [thunderbolt, quickAttack, thunder, chargeBeam];
+//their_attacks = [thunderbolt, quickAttack, thunder, chargeBeam];
 
-playerMove = 0; 
+var playerMove = 0; 
 
 function ice_beam() {
 	if (playerMove == 0 & userHP != 0) {
