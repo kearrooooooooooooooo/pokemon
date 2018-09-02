@@ -6,7 +6,7 @@ var my_HP = 100;
 var playerMove = 0; 
 
 function ice_beam() {
-	if (playerMove == 0 & userHP != 0) {
+	if (playerMove == 0 & my_HP != 0) {
 		var miss = Math.floor((Math.random() * 10) + 1); // miss rate
 		if (miss == 1) {
 			document.getElementById("message").innerHTML = "MUDKIP's attack missed!";
