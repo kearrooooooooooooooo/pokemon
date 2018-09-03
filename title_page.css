@@ -11,6 +11,10 @@ body{
 	width: 800px;
 }
 
+p{
+	padding-top: 50px;
+}
+
 .message{
 	position:relative;
 	font-size:48px;
@@ -18,14 +22,27 @@ body{
 }
 
 a:link, a:visited{
-	color: red;
 	text-decoration: none;
-	background-color:blue;
-	text-align:center;
-	padding: 14px 25px;
-	font-size:20px;
 }
 
-.pokemon_selection{
-	text-align:center;
+.pikachu{
+	margin-top: 90px;
+	margin-left: 200px;
+	float: left;
 }
+
+.mudkip{
+	margin-top: 90px;
+	margin-right: 200px;
+	float: right;
+}
+
+figcaption{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	border-radius: 25px;
+	background-color:blue;
+}
+
+

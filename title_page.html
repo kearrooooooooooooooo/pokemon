@@ -5,18 +5,22 @@
 	<link rel = "stylesheet" href = "title_page.css"/>
 	<title>Pokemon Battle</title>
 </head>
-<body onload = "startGame()">
+<body>
 	<div class = "game_screen">
 		<div class = "message">
-			Welcome! Choose a Pokemon.
+			<p>Welcome! Choose a Pokemon.</p>
 		</div>
-		<div class = "pokemon">
-			<img class = "pikachu" src="https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif" alt = "Pikachu sprite" /> <!--I know this link is wrong lol-->
-			<img class = "mudkip" src="https://img.pokemondb.net/sprites/black-white/anim/normal/mudkip.gif" alt = "Mudkip sprite"/>
+		<div class = "pikachu">
+			<a href = "pokemon_game.html">
+				<img src = "https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif" alt = "Pikachu sprite" style="width:160px;height:150px;">
+				<figcaption class = "name"> Pikachu </figcaption>
+			</a>
 		</div>
-		<div class = "pokemon_selection">
-			<a href="pokemon_game.html">Pikachu</a>
-			<a href="pokemon_game.html">Mudkip</a>
+		<div class = "mudkip">
+			<a href = "pokemon_game.html">
+				<img src = "https://img.pokemondb.net/sprites/black-white/anim/normal/mudkip.gif" alt = "Mudkip sprite" style="width:150px;height:150px;">
+				<figcaption class = "name"> Mudkip </figcaption>
+			</a>
 		</div>
 	</div>
 </body>
