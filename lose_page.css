@@ -1,0 +1,41 @@
+body {
+	font-family: monospace;
+	font-size: 20px;
+}
+
+.game_screen{
+	position: relative;
+	background-image: url('http://bit.ly/pokemonbg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 480px;
+	width: 800px;
+}
+
+.message{
+	position:relative;
+	font-size:48px;
+	text-align:center;
+}
+
+a:link, a:visited{
+	text-decoration: none;
+	background-color: blue;
+	border: 3px solid black;
+	color: white;
+	border-radius: 4px;
+	padding: 8px;
+}
+
+.yes{
+	margin-top: 90px;
+	margin-left: 300px;
+	float: left;
+}
+
+.no{
+	margin-top: 90px;
+	margin-right: 300px;
+	float: right;
+	display:block;
+}
