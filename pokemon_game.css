@@ -64,19 +64,22 @@ body {
 	border: 3px solid red;
 	border-radius: 0 0 8px 8px;
 	height: 160px;
-	width: 784px;
+	width: 778px;
+}
+
+#message {
+	font-size: 24px;
+	width: 50%;
+	position: fixed;
 }
 
 .box .message{
-	position: relative;
-	font-size: 24px;
-	width: 50%;
-	top: -10%;
+	position: fixed;
 }
 
 .box .continue{
-	position: absolute;
-	margin-top: 30px;
+	position: fixed;
+	margin-top: 95px;
 	width: 25%;
 	height: 100%;
 }
@@ -106,7 +109,7 @@ body {
 }
 
 .box .attacks button{
-	position: relative;
+	position: static;
 	background-color: blue;
 	float: right;
 	border: 3px solid black;
