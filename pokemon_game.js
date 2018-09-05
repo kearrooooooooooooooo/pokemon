@@ -31,6 +31,9 @@ function ice_beam() {
 				document.getElementById("their_HP").innerHTML = their_HP; // updated HP
 			if(their_HP == 0) {
 				document.getElementById("message").innerHTML = "PIKACHU fainted!" // if enemy pokemon's HP is 0
+				setTimeout(function(){
+					window.location.href = 'win_page.html';
+				}, 5000);		
 				}
 			}
 			//wait();
@@ -59,6 +62,9 @@ function surf() {
 				document.getElementById("their_HP").innerHTML = their_HP; // updated HP
 			if(their_HP == 0) {
 				document.getElementById("message").innerHTML = "PIKACHU fainted!" // if enemy pokemon's HP is 0
+				setTimeout(function(){
+					window.location.href = 'win_page.html';
+				}, 5000);				
 				}
 			}
 			//wait();
@@ -87,6 +93,9 @@ function earthquake() {
 				document.getElementById("their_HP").innerHTML = their_HP; // updated HP
 			if(their_HP == 0) {
 				document.getElementById("message").innerHTML = "PIKACHU fainted!" // if enemy pokemon's HP is 0
+				setTimeout(function(){
+					window.location.href = 'win_page.html';
+				}, 5000);
 				}
 			}
 			//wait();
@@ -115,6 +124,9 @@ function waterfall() {
 				document.getElementById("their_HP").innerHTML = their_HP; // updated HP
 			if(their_HP == 0) {
 				document.getElementById("message").innerHTML = "PIKACHU fainted!" // if enemy pokemon's HP is 0
+				setTimeout(function(){
+					window.location.href = 'win_page.html';
+				}, 5000);
 				}
 			}
 			//wait();
@@ -143,6 +155,9 @@ function thunderbolt(){
 			document.getElementById("my_HP").innerHTML = my_HP;
 		if(my_HP == 0){
 			document.getElementById("message").innerHTML = "MUDKIP fainted!"
+			setTimeout(function(){
+				window.location.href = 'lose_page.html';
+			}, 5000);
 		}
 	}
 }
@@ -167,6 +182,9 @@ function quickAttack(){
 			document.getElementById("my_HP").innerHTML = my_HP;
 		if(my_HP == 0){
 			document.getElementById("message").innerHTML = "MUDKIP fainted!"
+			setTimeout(function(){
+				window.location.href = 'lose_page.html';
+			}, 5000);
 		}
 	}
 }
@@ -191,6 +209,9 @@ function thunder(){
 			document.getElementById("my_HP").innerHTML = my_HP;
 		if(my_HP == 0){
 			document.getElementById("message").innerHTML = "MUDKIP fainted!"
+			setTimeout(function(){
+				window.location.href = 'lose_page.html';
+			}, 5000);
 		}
 	}
 }
@@ -215,6 +236,9 @@ function slam(){
 			document.getElementById("my_HP").innerHTML = my_HP;
 		if(my_HP == 0){
 			document.getElementById("message").innerHTML = "MUDKIP fainted!"
+			setTimeout(function(){
+				window.location.href = 'lose_page.html';
+			}, 5000);
 		}
 	}
 }
