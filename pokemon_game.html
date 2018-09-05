@@ -58,5 +58,19 @@
 					<button onclick = "comp_pokemon()">Continue</button>
 				</div>
 			</div>
+		<script>
+			my_HP = document.getElementbyId("my_HP")
+			their_HP = document.getElementbyId("their_HP")
+			if(my_HP == 0){
+				setTimeout(function(){
+					window.location.href = 'lose_page.html';
+				}, 5000);
+			}
+			else if(their_HP ==0){
+				setTimeout(function(){
+					window.location.href = 'win_page.html';
+				}, 5000);		
+			}
+		</script>
 	</body>
 	</html>
